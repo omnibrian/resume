@@ -1,0 +1,157 @@
+%!TEX TS-program = xelatex
+\documentclass[a4paper]{resume}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,
+    allbordercolors=white
+}
+
+\begin{document}
+\header{}{Brian LeBlanc}
+       {Bachelor of Science in Software Engineering}
+
+% Fake text to add separator
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+    ~
+    ~
+    ~
+    ~
+    ~
+  \section{Contact}
+    18 William St.
+    Fredericton,
+    New Brunswick
+    ~
+    \textbf{\href{mailto:brian.l@unb.ca}{brian.l@unb.ca}}
+    ~
+    \textbf{(506) 461-9979}
+    ~
+  \section{Git}
+    \href{https://github.com/omnibrian}{github.com/omnibrian}
+    \href{https://gitlab.com/omnibrian}{gitlab.com/omnibrian}
+    ~
+  \section{LinkedIn}
+    \href{https://www.linkedin.com/in/brianleblanc95/}{linkedin.com/in/brianleblanc95}
+    ~
+  \section{Languages}
+    Python
+    Bash
+    JavaScript
+    ReactJS
+    Ruby
+    Java
+    C
+    ~
+  \section{Tools}
+    Git
+    JIRA
+    Jenkins
+    Sceptre
+    Terraform
+    Chef
+    Ansible
+    ~
+  \section{Fun Facts}
+    Converted a Microsoft Surface Pro to run Linux
+    ~
+    Hosted personal BitWarden server on EC2
+    ~
+    Published a package on PyPi (see Personal Projects)
+    ~
+\end{aside}
+
+\section{Education}
+\begin{entrylist}
+  \entry
+    {2013 - 2018}
+    {Bachelor of Science in Software Engineering}
+    {Fredericton, New Brunswick}
+    {University of New Brunswick\\
+    \emph{GPA: 4.0}\\}
+  \entry
+    {2000 - 2013}
+    {High School Diploma}
+    {Fredericton, New Brunswick}
+    {École Saint-Anne}
+\end{entrylist}
+
+\section{Work Experience}
+\begin{entrylist}
+  \entry
+    {01/16 - Now}
+    {DevOps Specialist}
+    {Blue Spurs, Fredericton, New Brunswick}
+    {Used git (BitBucket \& GitHub) to collaborate on code with teams.\\
+    Used CI/CD tools such as Jenkins to build CI/CD workflows for teams.\\
+    Managed AWS infrastructure with CloudFormation, Sceptre, and Terraform.\\
+    Designed AWS native infrastructures leveraging AWS services.\\
+    Practiced Linux administration with Chef, Bash, Ansible, and Python.\\
+    Participated in biweekly 24/7 on-call rotations through VictorOps.\\}
+  \entry
+    {01/15 - 04/15}
+    {QA Analyst}
+    {Q1 Labs, IBM, Fredericton, New Brunswick}
+    {Learned and applied testing techniques (integration \& regression testing).\\
+    Gained a working knowledge of JIRA and ticket flows.\\}
+  \entry
+    {09/10 - 09/17}
+    {Lighting Technician \& Operator}
+    {Signature Sound, Fredericton, New Brunswick}
+    {Practiced troubleshooting of technical issues with unfamiliar systems.\\
+    Worked under pressure fixing time sensitive issues.}
+\end{entrylist}
+
+\section{Project Work}
+\begin{entrylist}
+  \wideentry
+    {i3-config-builder}
+    {\href{https://github.com/omnibrian/i3-config-builder}{github.com/omnibrian/i3-config-builder}}
+    {Built python CLI tool without a framework using the argparse library.\\
+    Published and available for install with pip.\\}
+  \wideentry
+    {AWS SNS Slack Notifier}
+    {\href{https://gitlab.com/omnibrian/aws-sns-slack-notifier}{gitlab.com/omnibrian/aws-sns-slack-notifier}}
+    {Built JavaScript script to forward SNS event information to Slack using AWS serverless.\\}
+  \wideentry
+    {AdventuresNB}
+    {Frontend only: \href{https://github.com/omnibrian/adventuresnb}{github.com/omnibrian/adventuresnb}}
+    {Project built for the Senior Design class (SWE4040) at UNB.\\
+    Built a static hosted ReactJS frontend connecting to a Python/Flask serverless backend.}
+\end{entrylist}
+
+\section{Volunteer Experience}
+\begin{entrylist}
+  \entry
+    {2014 - 2016}
+    {UNB RedShirts}
+    {University of New Brunswick, Fredericton, New Brunswick}
+    {\textbf{Orientation Leader}\\
+    Gained leadership experience.}
+\end{entrylist}
+
+\section{Extracurriculars}
+\begin{entrylist}
+  \entry
+    {2017 Fall}
+    {UCOSP - Review Board}
+    {\href{https://github.com/reviewboard/reviewboard}{github.com/reviewboard/reviewboard}}
+    {Contributed to the open source community.\\
+    Successfully implemented features for rbtools in python.}
+\end{entrylist}
+
+\vspace{5pt}
+\textbf{References available upon request.}
+
+\end{document}
