@@ -61,19 +61,14 @@
   \color{white}%
 }
 
-\newcommand{\header}[3]{%
+\newcommand{\header}[1]{%
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{30pt}{62pt}\color{header}%
-      {\thinfont #1}{\bodyfont  #2}
-    };
-    \node [anchor=north] at (name.south) {%
-      \fontsize{14pt}{24pt}\color{pblue}%
-      \bodyfont #3%
+      {\bodyfont  #1}
     };
   \end{tikzpicture}
-  \vspace{0.5cm}
   \vspace{-2\parskip}
 }
 
@@ -83,9 +78,10 @@
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
   {%
-    \LARGE\headingfont\color{headercolor}%
+    \LARGE\headingfont\color{headercolor} #1%
   }
   \par\vspace{\parskip}
+  \hrule
 }
 
 \renewcommand{\subsection}[2]{
